@@ -20,21 +20,7 @@ public class Cycle {
         System.out.println ("Вы ввели:");
         for (int i = 0; i < size; i++) {
             System.out.println (array[i]);
-        switch (array[i]){
-            case x: {
-                checker=true;
-                break;
-             }
-            case y: {
-                checker=true;
-                break;
-             }
-            case z: {
-                checker=true;
-                break;
-             }
-        }
-        if (checker) {
+        if ((array[i]==x)|(array[i]==y)|(array[i]==z)) {
            System.out.println("Данное значение имеется в константах");
            break;
         }
